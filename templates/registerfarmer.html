@@ -1,16 +1,16 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="container">
+<div class="containerbg">
   <div class="row">
     <div class="col-md-12">
       <center>
-        <h1>Create New User</h1>
+        <h1>Create New Farmer Profile</h1>
       </center>
     </div>
   </div>
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
-      <form action="/registerfarmer" method="post">
+      <form class="signupform" action="/registerfarmer" method="post">
         <div class="form-group">
          <label for="txtUsername">Username*</label>
          <input type="text" class="form-control" id="txtUsername" name="txtUsername"/>

@@ -1,0 +1,33 @@
+.containerbg{
+      background-image: url("https://c1.staticflickr.com/9/8518/8456454246_2f797e21c6_b.jpg");
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top: 0px;
+}
+.containerbgi{
+      background-image: url("http://datastart.com.au/wp-content/uploads/2018/02/Business-Investor.jpg");
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top: 0px;
+}
+
+.loginform, .signupform {
+    padding: 90px 30px 30px 30px;
+    background-color: #000;
+    opacity: 0.40;
+    height: 380px;
+    border-radius: 25px;
+}
+
+.txt{
+    opacity: 1;
+    color: #FFF;
+}
+
+#btn{
+  opacity: 1;
+}
