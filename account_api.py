@@ -1,6 +1,6 @@
 # from flask import Blueprint
 from flask import *
-from database import mongo
+from database import mongo, current_user
 import math
 
 account_api = Blueprint('account_api', __name__)
@@ -8,6 +8,7 @@ account_api = Blueprint('account_api', __name__)
 @account_api.route('/logout')
 def logout():
     logout_user()
+    current_user = None
     return redirect(url_for('index'))
    
 
@@ -108,7 +109,8 @@ def login():
             if(userName == username and pwd == password):
                 if(role == 'farmer'):
                     usrname = usr['_id']
-                                  
+
+                    current_user = usr['_id']
                     flash('Welcome back farmer {0}'.format(username))
                     try:
                         #next = request.form['next']
@@ -127,12 +129,3 @@ def login():
             return redirect(url_for('account_api.login'))
     else:
         return abort(405)
-
-@account_api.route('/investor', methods=['GET','SET'])
-def investor():
-    if request.method == 'GET':
-        results = []
-        farmers = mongo['db']['testFarm']
-        for frm in farmers.find():
-            results.append(frm)
-        return render_template('investor.html', result = results)

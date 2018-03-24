@@ -1,0 +1,217 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"inve",
+				"investor_api"
+			],
+			[
+				"ac",
+				"account_api"
+			],
+			[
+				"dom",
+				"document"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/prsso/Projects/Dreams/database.py",
+		"/C/Users/prsso/Projects/Dreams/account_api.py",
+		"/C/Users/prsso/Projects/Dreams/templates/index.html",
+		"/C/Users/prsso/Projects/Dreams/app.py",
+		"/C/Users/prsso/Projects/Dreams/templates/investor.html",
+		"/C/Users/prsso/Projects/Dreams/templates/registerfarmer.html",
+		"/C/Users/prsso/Projects/Dreams/.gitignore",
+		"/C/Users/prsso/Projects/prashantsolanki.com/source/prashantsolanki3.github.io/build.sh",
+		"/C/Users/prsso/Projects/prashantsolanki.com/source/prashantsolanki3.github.io/commit-push.sh",
+		"/C/Users/prsso/Projects/prashantsolanki.com/source/prashantsolanki3.github.io/_posts/2016-07-28-simple-subscription-form-for-your-jekyll-blog.md",
+		"/C/Users/prsso/MultiOSN/MultiOSN/twitter/test-nvd3.html",
+		"/C/Users/prsso/Udemy Tensorflow/Tensorflow-Bootcamp-master/train.csv",
+		"/C/Users/prsso/Projects/Dreams/controller/account_api.py",
+		"/C/Users/prsso/Projects/Dreams/templates/modify.html",
+		"/C/Users/prsso/Projects/prashantsolanki.com/source/prashantsolanki3.github.io/_posts/2016-09-12-Improve-VirtualBox-Performance.md",
+		"/C/Users/prsso/Desktop/Question1/app.py",
+		"/C/Users/prsso/Projects/Dreams/controller/app.py",
+		"/C/Users/prsso/Udemy Tensorflow/Tensorflow-Bootcamp-master/02-TensorFlow-Basics/y_data.csv",
+		"/C/Users/prsso/Projects/prashantsolanki.com/source/prashantsolanki3.github.io/_config.yml",
+		"/C/Users/prsso/Projects/prashantsolanki.com/source/prashantsolanki3.github.io/commit.sh",
+		"/C/Users/prsso/Projects/prashantsolanki.com/source/prashantsolanki3.github.io/_drafts/Kotlin-Installation-And-Scripting.md",
+		"/C/Users/prsso/Projects/prashantsolanki.com/source/prashantsolanki3.github.io/.jekyll-crosspost_to_medium/medium_crossposted.yml",
+		"/C/Users/prsso/Projects/prashantsolanki.com/stuf/asd/_config.yml",
+		"/C/Users/prsso/Projects/prashantsolanki.com/stuf/asd/Gemfile.lock",
+		"/C/Users/prsso/Projects/prashantsolanki.com/source/prashantsolanki3.github.io/Gemfile",
+		"/C/Users/prsso/Projects/prashantsolanki.com/master/prashantsolanki3.github.io/commit.sh",
+		"/C/Users/prsso/Projects/prashantsolanki.com/source/prashantsolanki3.github.io/index.md",
+		"/C/Users/prsso/Projects/prashantsolanki.com/source/prashantsolanki3.github.io/_layouts/home.html",
+		"/C/Users/prsso/Projects/prashantsolanki.com/master/prashantsolanki3.github.io/build.sh",
+		"/C/Users/prsso/Projects/prashantsolanki.com/source/prashantsolanki3.github.io/_posts/2015-09-26-FragmentPagerAdapter-vs-FragmentStatePagerAdapter.md",
+		"/C/Users/prsso/Projects/prashantsolanki.com/source/prashantsolanki3.github.io/Gemfilelock.lock",
+		"/C/Users/prsso/Projects/prashantsolanki.com/source/prashantsolanki3.github.io/Gemfile.lock",
+		"/C/Users/prsso/Downloads/webextensions-examples-master/borderify/manifest.json",
+		"/C/Users/prsso/Downloads/webextensions-examples-master/borderify/borderify.js",
+		"/C/Users/prsso/Downloads/linkedin-crawler-master/example/phantom_tor.js",
+		"/C/Users/prsso/Downloads/webextensions-examples-master/bookmark-it/manifest.json",
+		"/C/Users/prsso/Downloads/webextensions-examples-master/bookmark-it/background.js",
+		"/C/Users/prsso/PycharmProjects/untitled/linkedInByGrid2.json",
+		"/C/Users/prsso/PycharmProjects/untitled/linkedInByGrid-Melb.json",
+		"/C/Users/prsso/Google Drive/Unimelb/Summer Research Project/Datasets and APIs/getTweetByGrid.py",
+		"/C/Users/prsso/PycharmProjects/untitled/tweetsByGrid-Melb.json"
+	],
+	"find":
+	{
+		"height": 47.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 47.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "account_api.sublime-project",
+	"replace":
+	{
+		"height": 86.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 300.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,17 +1,55 @@
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-    <table>
-{% for key in result %}
-   <tr>
-        <th> {{ key.name,key.cred_cs,key.age,key.roi}} </th>
-        
-   </tr>
-{% endfor %}
-</table>
+{% extends 'base.html' %}
+{% block content %}
 
 
-</body>
-</html>
+<br/>
+<br/>
+
+<div>
+	Current Inv
+	<ul class="current_investment_list"/>
+</div>
+
+<div>
+	All Available Inv
+	<ul class="all_farmers_list"/>
+</div>
+
+<script type="text/javascript">
+
+// var available_investments = null;
+
+$.get( "/get_available_investments?investor_id=asd", function( data ) {
+  var farmers = data;
+var cList = $('ul.all_farmers_list')
+$.each(farmers, function(i)
+{
+    var li = $('<li/>')
+        .appendTo(cList);
+    var aaa = $('<a/>')
+        .text(JSON.stringify(farmers[i]))
+        .appendTo(li);
+});
+});
+
+
+$.get( "/get_investments?investor_id=asd", function( data ) {
+  var farmers = data;
+var cList = $('ul.current_investment_list')
+$.each(farmers, function(i)
+{
+    var li = $('<li/>')
+        .appendTo(cList);
+    var aaa = $('<a/>')
+        .text(JSON.stringify(farmers[i]))
+        .appendTo(li);
+});
+});
+
+
+
+
+</script>
+
+
+{% endblock %}

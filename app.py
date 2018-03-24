@@ -21,8 +21,11 @@ login_manager = LoginManager(app)
 login_manager.init_app(app)
 login_manager.login_view = 'login'
 
+from investor_api import investor_api
 from account_api import account_api
+
 app.register_blueprint(account_api)
+app.register_blueprint(investor_api)
 
 
 @app.route('/')
