@@ -1,3 +1,30 @@
+body {
+      padding-top: 50px;
+    }
+.signupform {
+    padding: 30px 10px 10px 10px;
+    background-color: #000;
+    height: 500px;
+    border-radius: 25px;
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+}
+.invform {
+    padding: 30px 10px 0px 10px;
+    background-color: #000;
+    height: 525px;
+    border-radius: 25px;
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+}
+.signuptable{
+  width: 100%;
+  padding: 30px 30px 30px 30px;
+  color: #fff;
+}
+input{
+  opacity: 0.5;
+}
 .containerbg{
       background-image: url("https://c1.staticflickr.com/9/8518/8456454246_2f797e21c6_b.jpg");
       height: 100%;
@@ -15,19 +42,11 @@
       padding-top: 0px;
 }
 
-.loginform, .signupform {
+.loginform {
     padding: 90px 30px 30px 30px;
     background-color: #000;
-    opacity: 0.40;
     height: 380px;
     border-radius: 25px;
-}
-
-.txt{
-    opacity: 1;
-    color: #FFF;
-}
-
-#btn{
-  opacity: 1;
+    background: rgba(0,0,0,0.4);
+    color: #fff;
 }

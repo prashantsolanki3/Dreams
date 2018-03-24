@@ -1,6 +1,6 @@
 # from flask import Blueprint
 from flask import *
-from database import mongo
+from database import mongo,current_user
 import math
 
 account_api = Blueprint('account_api', __name__)
@@ -24,6 +24,7 @@ def registerfarmer():
         Location = request.form['txtLocation']
         collate = request.form['txtcollat']
         collatamt = request.form['txtcollamt']
+        loanamt = request.form['txtloanamt']
         # TODO: Change this shit
         yield1 = float(request.form['txtyield1'])
         yield2 = float(request.form['txtyield2'])
@@ -36,8 +37,8 @@ def registerfarmer():
         csflr = math.floor(creditscore)
         csciel = math.ceil(creditscore)
         if(csflr < 1):
-        	flash('not eligible')
-        	return redirect(url_for('account_api.registerfarmer'))
+            flash('not eligible')
+            return redirect(url_for('account_api.registerfarmer'))
         csdec = creditscore%csflr
         if(csflr == 1):
             roi = 17.5 - (2.5 * csdec)
@@ -48,22 +49,23 @@ def registerfarmer():
         if(csflr == 4):
             roi = 10 - (2.5 * csdec)
         if(csflr >= 5):
-            roi = 7.5               
-        
+            roi = 7.5
+
         db = mongo['db']
-        test = db['testFarm']	
+        test = db['testFarm']
         login = mongo['db']['testLogin']
-        for usr in test.find():
+        for usr in login.find():
             if usr['_id'] == username:
                 flash('The username {0} is already in use.  Please try a new username.'.format(username))
                 return redirect(url_for('account_api.registerfarmer'))
-        test.insert({'_id': username,'name':name,'age':age,'dob':DOB,'location':Location,'cred_cs':creditscore,'yield1':yield1,'yield2':yield2,'yield3':yield3,'pwd':password, 'roi':roi})
-        login.insert({'_id': username,'pwd':password,'role':"farmer"}) 
-
+        test.insert({'_id': username,'name':name,'age':age,'dob':DOB,'location':Location,'cred_cs':creditscore,'yield1':yield1,'yield2':yield2,'yield3':yield3,'collateral':collate,'collateamt':collatamt,'pwd':password,'loanamount':loanamt ,'roi':roi})
+        login.insert({'_id': username,'pwd':password,'role':"farmer"})
+        
         flash('You have registered the username {0}. Please login'.format(username))
         return redirect(url_for('account_api.login'))
     else:
         abort(405)
+
 
 @account_api.route('/registerinvestor', methods=['GET', 'POST'])
 def registerinvestor():
@@ -83,7 +85,7 @@ def registerinvestor():
                 flash('The username {0} is already in use.  Please try a new username.'.format(username))
                 return redirect(url_for('account_api.registerinvestor'))
         test.insert({'_id': username,'name':name,'age':age,'dob':DOB,'location':Location,'pwd':password})
-        login.insert({'_id': username,'pwd':password,'role':"farmer"}) 
+        login.insert({'_id': username,'pwd':password,'role':"investor"})
             
         flash('You have registered the username {0}. Please login'.format(username))
         return redirect(url_for('account_api.login'))
@@ -108,18 +110,17 @@ def login():
             if(userName == username and pwd == password):
                 if(role == 'farmer'):
                     usrname = usr['_id']
-                                  
                     flash('Welcome back farmer {0}'.format(username))
                     try:
-                        #next = request.form['next']
-                        return redirect(url_for('account_api.investor'))
+                        next = request.form['next']
+                        return redirect(url_for(next))
                     except:
                         return redirect(url_for('index'))
                 else:
                     flash('Welcome back investor {0}'.format(username))
                     try:
-                        next = request.form['next']
-                        return redirect(next)
+                        #next = request.form['next']
+                        return redirect(url_for('account_api.investor'))
                     except:
                         return redirect(url_for('index'))
         else:
